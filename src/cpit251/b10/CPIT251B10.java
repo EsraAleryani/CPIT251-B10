@@ -17,6 +17,7 @@ public class CPIT251B10 {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Hello again 251");
+        System.out.println("Hi, raghad is back");
     }
     
 }
