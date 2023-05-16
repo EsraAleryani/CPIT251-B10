@@ -10,6 +10,7 @@ package cpit251.b10;
  * @author xesra
  */
 public class UserInfo {
+ 
        private String userName;
     private int userAge;
     private String userGender;
@@ -24,6 +25,7 @@ public class UserInfo {
         this.userWeight = userWeight;
         this.userHeight = userHeight;
         this.userActive = userActive;
+         System.out.println("hi");
     }
 
     public String getUserName() {

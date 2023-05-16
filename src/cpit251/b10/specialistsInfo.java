@@ -15,6 +15,13 @@ public class specialistsInfo {
     private int Age;
     private int price;
     private String specialization;
+      public specialistsInfo(String name, String gender, int Age, int price, String specialization) {
+        this.name = name;
+        this.gender = gender;
+        this.Age = Age;
+        this.price = price;
+        this.specialization = specialization;
+    }
 
     public String getName() {
         return name;
@@ -56,12 +63,6 @@ public class specialistsInfo {
         this.specialization = specialization;
     }
 
-    public specialistsInfo(String name, String gender, int Age, int price, String specialization) {
-        this.name = name;
-        this.gender = gender;
-        this.Age = Age;
-        this.price = price;
-        this.specialization = specialization;
-    }
+  
 
 }
