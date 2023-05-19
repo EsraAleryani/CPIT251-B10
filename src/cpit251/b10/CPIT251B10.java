@@ -24,7 +24,7 @@ public class CPIT251B10 {
        userAnswer = input.nextInt();
        }
   while(userAnswer != 1 || userAnswer != 2);
-        
+            
         if (userAnswer ==1) {
   
                 System.out.println("What is your name?");
@@ -39,7 +39,7 @@ public class CPIT251B10 {
                 int Height = input.nextInt();
                 System.out.println("Express your activity from 0 to 3");
                 int Active = input.nextInt();
-                
+                 
             A = new UserInfo(name , Age , Gender , Weight , Height , Active);
             System.out.println("");
             
