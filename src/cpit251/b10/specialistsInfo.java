@@ -1,4 +1,4 @@
- package cpit251.b10;
+package cpit251.b10;
 
 /**
  *
