@@ -1,6 +1,7 @@
 
 package cpit251.b10;
-import java.util.Scanner; 
+ 
+import java.util.*;
 public class CPIT251B10 {
 
     /**
@@ -15,7 +16,16 @@ public class CPIT251B10 {
         //System.out.println("Hello, This is Rama!");
         //System.out.println("HIIIII");
         Scanner input = new Scanner(System.in); 
+        
         UserInfo A = new UserInfo();
+        Employee employee = new Employee();
+        ArrayList<Employee> employeeList = new ArrayList<> ();
+        employee = new Employee("Ahmed Al-Ghamdi","Nutrition Specialist", 3.5, 599, "Nutritionist Specialized in Pediatric Dietian and Nutrition, Adult Internal Medicine","Male");
+        employeeList.add(employee);
+        employee = new Employee("Sarah Osama","Nutrition Specialist", 4.3, 650, "Nutritionist Specialized in Pediatric Dietian and Nutrition, Adult Dietitain","Fmale");
+        employeeList.add(employee);
+        employee = new Employee("Maryam Azhari","Nutrition Specialist", 5 , 300, "Nutritionist Specialized in  Adult Dietitian and Nutrition , Pediatric Dietian ","Fmale");
+        employeeList.add(employee);
         int userAnswer;
         do{                     
        System.out.println("<<Welcome to Teach Fit application>>");
@@ -23,7 +33,7 @@ public class CPIT251B10 {
        System.out.println("If you are enter Click 1, If you are not enter Click 2");
        userAnswer = input.nextInt();
        }
-  while(userAnswer != 1 || userAnswer != 2);
+        while(userAnswer != 1 || userAnswer != 2);
             
         if (userAnswer ==1) {
   
