@@ -28,24 +28,20 @@ public class CPIT251B10 {
         if (userAnswer ==1) {
   
                 System.out.println("What is your name?");
-                String name = input.nextLine();
-                A.setUserName(name);
+                String name = input.nextLine();        
                 System.out.println("How old are you?");
-                int Age = input.nextInt();
-                A.setUserAge(Age);
+                int Age = input.nextInt();           
                 System.out.println("Your gender?");
-                String Gender = input.nextLine();
-                A.setUserGender(Gender);
+                String Gender = input.nextLine();         
                 System.out.println("How much do you weigh?");
-                int Weight = input.nextInt();
-                A.setUserWeight(Weight);
+                int Weight = input.nextInt();               
                 System.out.println("How much your height?");
                 int Height = input.nextInt();
-                A.setUserHeight(Height);
                 System.out.println("Express your activity from 0 to 3");
                 int Active = input.nextInt();
-                A.setUserActive(Active);
-                System.out.println("");
+                
+            A = new UserInfo(name , Age , Gender , Weight , Height , Active);
+            System.out.println("");
             
             if (userAnswer == 2)
                 {
