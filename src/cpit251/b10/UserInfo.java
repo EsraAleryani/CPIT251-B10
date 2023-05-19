@@ -24,10 +24,7 @@ public class UserInfo {
          System.out.println("hi");
     }
 
-    UserInfo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
+ 
     public String getUserName() {
         return userName;
     }
