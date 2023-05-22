@@ -4,9 +4,7 @@ package cpit251.b10;
 import java.util.*;
 public class CPIT251B10 {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         // TODO code application logic here
         //System.out.println("Hello again 251>>");

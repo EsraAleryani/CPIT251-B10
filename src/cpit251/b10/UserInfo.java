@@ -1,9 +1,6 @@
 package cpit251.b10;
 
-/**
- *
- * @author xesra
- */
+
 public class UserInfo {
 
     private String userName;
