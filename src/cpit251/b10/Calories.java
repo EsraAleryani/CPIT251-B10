@@ -5,10 +5,7 @@
  */
 package cpit251.b10;
 
-/**
- *
- * @author ragha
- */
+
 public class Calories {
     
     String Name;
