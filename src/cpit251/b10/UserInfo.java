@@ -1,4 +1,3 @@
-
 package cpit251.b10;
 
 /**
@@ -6,25 +5,28 @@ package cpit251.b10;
  * @author xesra
  */
 public class UserInfo {
- 
+
     private String userName;
     private int userAge;
     private String userGender;
-    private int userWeight;
-    private int userHeight;
+    private double userWeight;
+    private double userHeight;
     private int userActive;
 
-    public UserInfo(String userName, int userAge, String userGender, int userWeight, int userHeight, int userActive) {
+    public UserInfo(String userName, int userAge, String userGender, double userWeight, double userHeight, int userActive) {
         this.userName = userName;
         this.userAge = userAge;
         this.userGender = userGender;
         this.userWeight = userWeight;
         this.userHeight = userHeight;
         this.userActive = userActive;
-         System.out.println("hi");
+        System.out.println("hi");
     }
-    public UserInfo(){
-    };
+
+    public UserInfo() {
+    }
+
+    ;
  
     public String getUserName() {
         return userName;
@@ -50,19 +52,19 @@ public class UserInfo {
         this.userGender = userGender;
     }
 
-    public int getUserWeight() {
+    public double getUserWeight() {
         return userWeight;
     }
 
-    public void setUserWeight(int userWeight) {
+    public void setUserWeight(double userWeight) {
         this.userWeight = userWeight;
     }
 
-    public int getUserHeight() {
+    public double getUserHeight() {
         return userHeight;
     }
 
-    public void setUserHeight(int userHeight) {
+    public void setUserHeight(double userHeight) {
         this.userHeight = userHeight;
     }
 
@@ -73,5 +75,5 @@ public class UserInfo {
     public void setUserActive(int userActive) {
         this.userActive = userActive;
     }
-    
+
 }

@@ -20,6 +20,8 @@ public class CPIT251B10 {
         UserInfo A = new UserInfo();
         Employee employee = new Employee();
         ArrayList<Employee> employeeList = new ArrayList<> ();
+        Calories calories = null;
+        Calories UserCalories = new Calories() ;
         employee = new Employee("Ahmed Al-Ghamdi","Nutrition Specialist", 3.5, 599, "Nutritionist Specialized in Pediatric Dietian and Nutrition, Adult Internal Medicine","Male");
         employeeList.add(employee);
         employee = new Employee("Sarah Osama","Nutrition Specialist", 4.3, 650, "Nutritionist Specialized in Pediatric Dietian and Nutrition, Adult Dietitain","Fmale");
@@ -46,12 +48,16 @@ public class CPIT251B10 {
                 System.out.println("How much do you weigh?");
                 int Weight = input.nextInt();               
                 System.out.println("How much your height?");
-                int Height = input.nextInt();
+                double Height = input.nextInt();
                 System.out.println("Express your activity from 0 to 3");
                 int Active = input.nextInt();
                  
             A = new UserInfo(name , Age , Gender , Weight , Height , Active);
             System.out.println("");
+            
+            
+            UserCalories = new Calories (name, Age, Gender, Height, Weight, Active, calories);
+            System.out.printf("Your daily calorie needs are: %.0f calories", UserCalories.calories);
             
             if (userAnswer == 2)
                 {
