@@ -9,15 +9,17 @@ public class Employee {
     double fees;
     String CareerD;
     String gender;
+    int empNum;
     
 
-    public Employee(String eName, String role, double rating, double fees, String CareerD, String gender) {
+    public Employee(int empNum, String eName, String role, double rating, double fees, String CareerD, String gender) {
         this.eName = eName;
         this.role = role;
         this.rating = rating;
         this.fees = fees;
         this.CareerD = CareerD;
         this.gender = gender;
+        this.empNum = empNum;
     }
 
     public Employee() {
@@ -71,6 +73,15 @@ public class Employee {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+    public int getEmpNum() {
+        return empNum;
+    }
+
+    public void setEmpNum(int empNum) {
+        this.empNum = empNum;
+    }
+    
     
     
 }
