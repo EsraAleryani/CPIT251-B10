@@ -1,9 +1,6 @@
 package cpit251.b10;
 
-/**
- *
- * @author xesra
- */
+
 public class specialistsInfo {
      private String name;
     private String gender;

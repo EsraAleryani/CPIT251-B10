@@ -13,8 +13,9 @@ public class CPIT251B10 {
         //System.out.println("We can do it, Fighting!");
         //System.out.println("Hello, This is Rama!");
         //System.out.println("HIIIII");
-        Scanner input = new Scanner(System.in); 
-        
+        Scanner inputInt = new Scanner(System.in); 
+        Scanner inputStr = new Scanner(System.in); 
+
         UserInfo A = new UserInfo();
         
         Employee [] employee = new Employee [4];
@@ -24,29 +25,30 @@ public class CPIT251B10 {
         Calories UserCalories = new Calories() ;
         
         
-        int userAnswer;
-        //do{                     
+       int userAnswer;
+       do{                     
        System.out.println("<<Welcome to Teach Fit application>>");
        System.out.println("Please answer the following questions to help us provide you with better services");
        System.out.println("If you are enter Click 1, If you are not enter Click 2");
-       userAnswer = input.nextInt();
-       //}
-       // while(userAnswer != 1 || userAnswer != 2);
+       userAnswer = inputStr.nextInt();
+       }
+       while(userAnswer != 1 || userAnswer != 2);
+       
             
         if (userAnswer ==1) {
   
                 System.out.println("What is your name?");
-                String name = input.next();        
+                String name = inputStr.next();        
                 System.out.println("How old are you?");
-                int Age = input.nextInt();           
-                System.out.println("Your gender?");
-                String Gender = input.next();         
+                int Age = inputInt.nextInt();           
+                System.out.println("Your gender Female(F), Male(M)?");
+                String Gender = inputStr.next();         
                 System.out.println("How much do you weigh?");
-                int Weight = input.nextInt();               
+                double Weight = inputInt.nextInt();               
                 System.out.println("How much your height?");
-                double Height = input.nextDouble();
+                double Height = inputInt.nextDouble();
                 System.out.println("Express your activity from 0 to 3");
-                int Active = input.nextInt();
+                int Active = inputInt.nextInt();
                  
             A = new UserInfo(name , Age , Gender , Weight , Height , Active);
             System.out.println("");

@@ -1,6 +1,7 @@
 package cpit251.b10;
 
 
+
 public class UserInfo {
 
     private String userName;
