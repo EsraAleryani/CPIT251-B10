@@ -17,6 +17,7 @@ public class Calories {
     double calories;
     double bmr;
 
+    
     public Calories(String Name, int age, String gender, double height, double Weight, int active, double calories) {
         this.Name = Name;
         this.age = age;
