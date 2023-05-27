@@ -1,6 +1,11 @@
 
 package cpit251.b10;
-
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class Employee {
     String eName;
@@ -10,7 +15,7 @@ public class Employee {
     String CareerD;
     String gender;
     int empNum;
-    
+    static  Calories UserCalories;
 
     public Employee(int empNum, String eName, String role, double rating, double fees, String CareerD, String gender) {
         this.eName = eName;
@@ -80,6 +85,40 @@ public class Employee {
 
     public void setEmpNum(int empNum) {
         this.empNum = empNum;
+    }
+    public void generatePlan(Employee  employee,double UserCalories) throws FileNotFoundException, IOException{
+        System.out.println("You select" + eName);
+        System.out.println("This is your plan:");
+
+      
+        if(UserCalories <= 500){
+           
+           File file = new File("loss.txt");
+             Scanner in = new Scanner(file); 
+            while(in.hasNextLine()){
+                  System.out.println(in.nextLine());
+              }
+              in.close();
+        }
+        else if((UserCalories > 500) && (UserCalories<=1000)){
+             File file = new File("maintain.txt");
+              Scanner in = new Scanner(file);  
+                while(in.hasNextLine()){
+                  System.out.println(in.nextLine());
+              }
+                in.close();
+        
+    }
+        else{
+             File file = new File("gain.txt");
+              Scanner in = new Scanner(file);
+                while(in.hasNextLine()){
+                  System.out.println(in.nextLine());
+              }
+                in.close();
+        }
+        
+       
     }
     
     
