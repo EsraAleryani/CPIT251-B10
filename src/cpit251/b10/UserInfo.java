@@ -19,6 +19,7 @@ public class UserInfo {
         this.userHeight = userHeight;
         this.userActive = userActive;
         System.out.println("hi");
+        
     }
 
     public UserInfo() {
