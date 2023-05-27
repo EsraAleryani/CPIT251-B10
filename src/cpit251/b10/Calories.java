@@ -15,6 +15,7 @@ public class Calories {
     double Weight;
     int active;
     double calories;
+    double bmr;
 
     public Calories(String Name, int age, String gender, double height, double Weight, int active, double calories) {
         this.Name = Name;
@@ -30,10 +31,6 @@ public class Calories {
         
     }
 
-    Calories(String name, int Age, String Gender, double Height, int Weight, int Active, Calories calories) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
     public String getName() {
         return Name;
     }
@@ -82,20 +79,20 @@ public class Calories {
         this.active = active;
     }
 
-    public void setCalories(String gender, double height, double weight, int age, int Activity, double calories, double bmr) {
+    public double calCalories(){
 
         if (gender.equals("M")) { // if male
 
-            bmr = 88.4 + (13.4 * weight) + (4.8 * height) - (5.68 * age);
+            bmr = 88.4 + (13.4 * Weight) + (4.8 * this.height) - (5.68 * age);
 
         } else { // if female
 
-            bmr = 447.6 + (9.25 * weight) + (3.10 * height) - (4.33 * age);
+            bmr = 447.6 + (9.25 * Weight) + (3.10 * height) - (4.33 * age);
 
         }
 
         // calculate calorie based on activity
-        switch (Activity) {
+        switch (this.active) {
             case 0:
                 calories = bmr * 1.2;
                 break;
@@ -113,7 +110,7 @@ public class Calories {
                 break;
         }
 
-
+        return calories;
     }
 
 }

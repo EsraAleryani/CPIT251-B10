@@ -21,7 +21,7 @@ public class CPIT251B10 {
         Employee [] employee = new Employee [4];
         ourEmp(employee);
         
-        Calories calories = null;
+        double calories = 0;
         Calories UserCalories = new Calories() ;
         
         
@@ -54,7 +54,7 @@ public class CPIT251B10 {
             System.out.println("");
    
             UserCalories = new Calories (name, Age, Gender, Height, Weight, Active, calories);
-            System.out.printf("Your daily calorie needs are: %.0f calories", UserCalories.calories);
+            System.out.printf("Your daily calorie needs are: %.0f calories", UserCalories.calCalories());
             
             if (userAnswer == 2)
                 {
