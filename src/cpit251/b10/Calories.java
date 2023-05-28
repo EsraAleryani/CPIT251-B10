@@ -30,6 +30,7 @@ public class Calories {
     
     public Calories() {
         
+        
     }
 
     public String getName() {
