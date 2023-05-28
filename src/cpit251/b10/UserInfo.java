@@ -20,6 +20,7 @@ public class UserInfo {
         this.userActive = userActive;
         System.out.println("hi");
         
+        
     }
 
     public UserInfo() {
