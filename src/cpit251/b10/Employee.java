@@ -47,6 +47,7 @@ public class Employee {
         this.role = role;
     }
 
+    
     public double getRating() {
         return rating;
     }
