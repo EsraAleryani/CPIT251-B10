@@ -32,6 +32,7 @@ public class specialistsInfo {
         this.gender = gender;
     }
 
+    
     public int getAge() {
         return Age;
     }
