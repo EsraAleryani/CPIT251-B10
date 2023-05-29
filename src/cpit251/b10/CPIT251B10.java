@@ -49,7 +49,7 @@ public class CPIT251B10 {
                 double Weight = inputInt.nextInt();
                 System.out.println("How much your height?");
                 double Height = inputInt.nextDouble();
-                System.out.println("Express your activity from 0 to 3");
+                System.out.println("Express your activity from 0 to 4");
                 int Active = inputInt.nextInt();              
 
                 A = new UserInfo(name, Age, Gender, Weight, Height, Active);

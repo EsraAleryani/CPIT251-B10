@@ -83,33 +83,36 @@ public class Calories {
 
     public double calCalories(){
 
-        if (gender.equals("M")) { // if male
+        if (gender.equals("m")) { // if male
 
-            bmr = 88.4 + (13.4 * Weight) + (4.8 * this.height) - (5.68 * age);
+            bmr = (10 * Weight) + (6.25 * height) - (5 * age) + 5;
 
-        } else { // if female
+        } else if (gender.equals("f")) { 
 
-            bmr = 447.6 + (9.25 * Weight) + (3.10 * height) - (4.33 * age);
+            bmr = (10 * Weight) + (6.25 * height) - (5 * age) - 161;
 
         }
 
         // calculate calorie based on activity
-        switch (this.active) {
+        switch (active) {
+            
             case 0:
-                calories = bmr * 1.2;
+                calories = Math.round((bmr * 1.2)* 100.0) / 100.0;
                 break;
             case 1:
-                calories = bmr * 1.375;
+                calories = Math.round((bmr * 1.375)* 100.0) / 100.0;
                 break;
             case 2:
-                calories = bmr * 1.55;
+                calories = Math.round((bmr * 1.55)* 100.0) / 100.0;
                 break;
             case 3:
-                calories = bmr * 1.725;
+                calories = Math.round((bmr * 1.725)* 100.0) / 100.0;
                 break;
             case 4:
-                calories = bmr * 1.9;
+                calories = Math.round((bmr * 1.9)* 100.0) / 100.0;
                 break;
+            default:
+                System.out.println("invalid activity level entered");
         }
 
         return calories;
