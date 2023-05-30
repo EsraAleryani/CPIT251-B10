@@ -19,6 +19,7 @@ public class Payment {
     String membershipType;
     int totalPrice;
 
+    
     Scanner input = new Scanner(System.in);
 
     public Payment(String coachName, String neutritionName, String membershipType, int totalPrice) {
