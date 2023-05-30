@@ -112,16 +112,26 @@ public class CPIT251B10 {
     public static void plan(Employee[] employee, double c) throws FileNotFoundException, IOException {
         System.out.println("Please select the employee you want work with by his id: ");
         int choice = inputInt.nextInt();
+        while(true){
         if (choice == 1) {
             employee[1].generatePlan(employee[1], c);
+            break;
         } else if (choice == 2) {
             employee[2].generatePlan(employee[2], c);
+            break;
         } else if (choice == 3) {
             employee[3].generatePlan(employee[3], c);
-        } else {
+            break;
+        } else if (choice == 4) {
             employee[4].generatePlan(employee[4], c);
+            break;
+        }
+        else{
+            System.out.println("We don't have this choice, please ENTER agian from Existing employee ");
+            choice = inputInt.nextInt();
         }
 
+    }
     }
 }
 
