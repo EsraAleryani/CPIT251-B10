@@ -88,11 +88,11 @@ public class Employee {
         this.empNum = empNum;
     }
     public void generatePlan(Employee  employee,double UserCalories) throws FileNotFoundException, IOException{
-        System.out.println("You select" + eName);
+        System.out.println("You select " + eName);
         System.out.println("This is your plan:");
 
       
-        if(UserCalories <= 500){
+        if(UserCalories >= 3000){
            
            File file = new File("loss.txt");
              Scanner in = new Scanner(file); 
@@ -101,7 +101,7 @@ public class Employee {
               }
               in.close();
         }
-        else if((UserCalories > 500) && (UserCalories<=1000)){
+        else if((UserCalories > 1500) && (UserCalories<3000)){
              File file = new File("maintain.txt");
               Scanner in = new Scanner(file);  
                 while(in.hasNextLine()){
