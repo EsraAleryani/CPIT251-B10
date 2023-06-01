@@ -9,6 +9,7 @@ public class CPIT251B10 {
 
     static Scanner inputInt = new Scanner(System.in);
     static Calories UserCalories;
+    static Employee[] employee = new Employee[4];
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
         // TODO code application logic here
@@ -20,12 +21,12 @@ public class CPIT251B10 {
         //System.out.println("HIIIII");
 
         Scanner inputStr = new Scanner(System.in);
-
+        Employee object = new Employee(employee);
         UserInfo A = new UserInfo();
 
-        Employee[] employee = new Employee[4];
-        ourEmp(employee);
-
+        
+        object.ourEmp(employee);
+                
         double calories = 0;
         UserCalories = new Calories();
 
@@ -90,13 +91,7 @@ public class CPIT251B10 {
      
     
    
-    public static void ourEmp(Employee[] employee) {
-        employee[0] = new Employee(1, "Ahmed Al-Ghamdi", "Nutrition Specialist", 3.5, 599, " Specialized in Adult Internal Medicine", "Male");
-        employee[1] = new Employee(2, "Sarah Osama", "Nutrition Specialist", 4.3, 650, " Specialized in Adult Dietitain", "Female");
-        employee[2] = new Employee(3, "Hala saad ", "Coach", 5.0, 200, "Specialized in gain weight", "Male");
-        employee[3] = new Employee(4, "Maryam Gamil", "Coach", 4.5, 399, "Specialized in loss weight", "Female");
-
-    }
+    
 
     public static void EmpMenu(Employee[] employee) {
         System.out.println("Employ information:  ");
