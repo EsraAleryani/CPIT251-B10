@@ -15,6 +15,7 @@ public class Employee {
     String CareerD;
     String gender;
     int empNum;
+    Employee [] array;
     static  Calories UserCalories;
 
     public Employee(int empNum, String eName, String role, double rating, double fees, String CareerD, String gender) {
@@ -29,8 +30,20 @@ public class Employee {
 
     public Employee() {
     }
-    
 
+    public Employee(Employee[] array) {
+        this.array = array;
+    }
+
+    public Employee[] getArray() {
+        return array;
+    }
+
+    public void setArray(Employee[] array) {
+        this.array = array;
+    }
+    
+    
     public String geteName() {
         return eName;
     }
@@ -120,6 +133,13 @@ public class Employee {
         }
         
        
+    }
+     public void ourEmp(Employee[] employee) {
+        employee[0] = new Employee(1, "Ahmed Al-Ghamdi", "Nutrition Specialist", 3.5, 599, " Specialized in Adult Internal Medicine", "Male");
+        employee[1] = new Employee(2, "Sarah Osama", "Nutrition Specialist", 4.3, 650, " Specialized in Adult Dietitain", "Female");
+        employee[2] = new Employee(3, "Hala saad ", "Coach", 5.0, 200, "Specialized in gain weight", "Male");
+        employee[3] = new Employee(4, "Maryam Gamil", "Coach", 4.5, 399, "Specialized in loss weight", "Female");
+
     }
     
     
