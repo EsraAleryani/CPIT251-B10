@@ -53,6 +53,8 @@ public class Payment {
             
             System.out.println("you have not subscriped to a membership and the total price is: " + totalPrice);
 
+            
+            
         }
         System.out.println("Your Invoce Information is : ");
         System.out.println("---------------------------- ");
