@@ -64,25 +64,7 @@ public class CPIT251B10 {
                 plan(employee, c);
 
                 int servicenum = 0;
-                Payment payment = new Payment("not specified yet", "not specified yet", "not specified yet", 0);
-                while (servicenum != 5) {
-                    System.out.println("");
-                    System.out.print("select service: \n 1]Coach \n 2]Neutrition \n 3]Membership \n 4]Print Invoce \n 5]No Service \n Selection: ");
-                    servicenum = inputInt.nextInt();
-                    System.out.println("");
-                    if (servicenum == 1) {
-                        payment.Coach();
-                    } else if (servicenum == 2) {
-                        payment.Neutrition();
-                    } else if (servicenum == 3) {
-                        payment.Mmembership();
-                    } else if (servicenum == 4) {
-                        payment.displayPayment();
-                    } else {
-                        break;
-                    }
-                }
-
+       
             } else if (userAnswer == 2) {
                 System.out.println("Witing for you next time(:");
             }
@@ -109,16 +91,20 @@ public class CPIT251B10 {
         int choice = inputInt.nextInt();
         while(true){
         if (choice == 1) {
-            employee[1].generatePlan(employee[1], c);
+            employee[0].generatePlan(employee[0], c);
+            payment(employee[0].fees , employee[0].eName);
             break;
         } else if (choice == 2) {
-            employee[2].generatePlan(employee[2], c);
+            employee[1].generatePlan(employee[1], c);
+            payment(employee[1].fees , employee[1].eName);
             break;
         } else if (choice == 3) {
-            employee[3].generatePlan(employee[3], c);
+            employee[2].generatePlan(employee[2], c);
+            payment(employee[2].fees , employee[2].eName);
             break;
         } else if (choice == 4) {
-            employee[4].generatePlan(employee[4], c);
+            employee[3].generatePlan(employee[3], c);
+            payment(employee[3].fees , employee[3].eName);
             break;
         }
         else{
@@ -127,6 +113,10 @@ public class CPIT251B10 {
         }
 
     }
+    } public static void payment (double fees, String ename) {
+        Payment payment = new Payment (ename , fees);
+        payment.displayPayment(ename, fees);
     }
 }
+   
 

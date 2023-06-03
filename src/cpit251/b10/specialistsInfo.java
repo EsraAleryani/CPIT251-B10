@@ -3,7 +3,7 @@ package cpit251.b10;
 
 public class specialistsInfo {
     
-     private String name;
+    private String name;
     private String gender;
     private int Age;
     private int price;
