@@ -50,6 +50,7 @@ public class specialistsInfo {
     }
 
     
+    
     public String getSpecialization() {
         return specialization;
     }
