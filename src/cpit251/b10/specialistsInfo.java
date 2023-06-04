@@ -49,6 +49,7 @@ public class specialistsInfo {
         this.price = price;
     }
 
+    
     public String getSpecialization() {
         return specialization;
     }
