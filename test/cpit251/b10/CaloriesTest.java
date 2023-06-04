@@ -97,6 +97,7 @@ public class CaloriesTest {
         String expResult = "m";
         String result = instance.getGender();
         assertEquals(expResult, result);
+        
     }
 
     /**
