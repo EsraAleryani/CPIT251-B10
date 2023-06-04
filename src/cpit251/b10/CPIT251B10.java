@@ -43,6 +43,7 @@ public class CPIT251B10 {
             userAnswer = inputStr.nextInt();
 
             if (userAnswer == 1) {
+                
 
                 System.out.println("What is your name?");
                 String name = inputStr.next();
