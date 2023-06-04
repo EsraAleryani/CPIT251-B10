@@ -124,6 +124,7 @@ public class Employee {
               }
                 in.close();
         
+                
     }
         else{
              File file = new File("gain.txt");
