@@ -86,11 +86,11 @@ public class Calories {
 
     public double calCalories(){
 
-        if (gender.equals("m")) { // if male
+        if (gender.equalsIgnoreCase("M")) { // if male
 
             bmr = (10 * Weight) + (6.25 * height) - (5 * age) + 5;
 
-        } else if (gender.equals("f")) { 
+        } else if (gender.equalsIgnoreCase("F")) { 
 
             bmr = (10 * Weight) + (6.25 * height) - (5 * age) - 161;
 
