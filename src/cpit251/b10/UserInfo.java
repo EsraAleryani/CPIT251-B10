@@ -18,6 +18,7 @@ public class UserInfo {
         this.userWeight = userWeight;
         this.userHeight = userHeight;
         this.userActive = userActive;
+   
         
         
         
