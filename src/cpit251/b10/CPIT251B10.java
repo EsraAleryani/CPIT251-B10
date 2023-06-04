@@ -63,7 +63,7 @@ public class CPIT251B10 {
                 System.out.println("");
 
                 UserCalories = new Calories(name, Age, Gender, Height, Weight, Active, calories);
-                System.out.printf("Your daily calorie needs are: %.0f calories", UserCalories.calCalories());
+                System.out.printf("Your daily calorie needs are: %.0f ", UserCalories.calCalories());
                 double c = UserCalories.calCalories();
 
                 EmpMenu(employee);
@@ -82,7 +82,7 @@ public class CPIT251B10 {
     
 
     public static void EmpMenu(Employee[] employee) {
-        System.out.println("Employ information:  ");
+        System.out.println("\n Employ information:  ");
         System.out.println("ID           Name                       Role              Rate     Fees                                    Career             Gender   ");
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");
         for (int i = 0; i < employee.length; i++) {
