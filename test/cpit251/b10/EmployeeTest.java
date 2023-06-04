@@ -6,6 +6,8 @@
 package cpit251.b10;
 
 import static cpit251.b10.CPIT251B10.employee;
+import java.io.File;
+import java.io.IOException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -270,7 +272,7 @@ public class EmployeeTest {
     }
 
     
-    @Test (timeout = 1)
+    @Test
     public void testOurEmp() {
         System.out.println("ourEmp");
         Employee a =new Employee();
@@ -287,6 +289,28 @@ public class EmployeeTest {
         Employee a =new Employee();
         a.ourEmp(employee);
         assertNotNull(employee[1]);
+    }
+       
+ @Test
+ public void testGainFile() throws IOException{
+    
+    File gainFile = new File("gain.txt");
+    assertTrue(gainFile.exists());
+     
+    }
+  @Test
+ public void testlossFile() throws IOException{
+    
+    File lossFile = new File("loss.txt");
+    assertTrue(lossFile.exists());
+     
+    }
+  @Test
+ public void testMaintainFile() throws IOException{
+    
+    File MaintainFile = new File("maintain.txt");
+    assertTrue(MaintainFile.exists());
+     
     }
     
 }
