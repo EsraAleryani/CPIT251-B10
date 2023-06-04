@@ -53,10 +53,12 @@ public class specialistsInfo {
         return specialization;
     }
 
+    
     public void setSpecialization(String specialization) {
         this.specialization = specialization;
     }
 
   
+    
 
 }
