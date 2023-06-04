@@ -87,6 +87,7 @@ public class CaloriesTest {
 
     }
 
+    
     /**
      * Test of getGender method, of class Calories.
      */
