@@ -96,6 +96,7 @@ public class Calories {
 
         }
 
+        
         // calculate calorie based on activity
         switch (active) {
             
